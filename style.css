@@ -1,0 +1,308 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(236, 172, 183);
+    color: black;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+/* Logo */
+.nav-logo {
+    font-size: 1.5rem;
+}
+
+/* Address block */
+.nav-address {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    padding: 5px 10px;
+    background-color: rgb(217, 220, 214);
+    border-radius: 5px;
+}
+
+.nav-address i {
+    margin-right: 5px;
+}
+
+.address-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.country {
+    font-weight: bold;
+}
+
+/* Search Bar */
+.nav-search {
+    display: flex;
+    align-items: center;
+    background-color: rgb(217, 220, 214);
+    width: 500px;
+    height: 30px;
+    border-radius: 4px;
+    margin-left: 200px;
+    padding: 5px;
+}
+
+.search-select {
+    width: 55px;
+    height: 25px;
+    border: none;
+    background: white;
+}
+
+.search-revya {
+    width: 400px;
+    height: 25px;
+    border: none;
+    padding-left: 5px;
+}
+
+.search-icon {
+    font-size: 1.2rem;
+}
+
+/* Stores, Account, Wishlist, Cart */
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.nav-item i {
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+}
+
+/* Panel below navbar */
+.panel {
+    height: 50px;
+    background-color: rgb(217, 220, 214);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 50px;
+    z-index: 999;
+    width: 100%;
+}
+
+.panel-ops p {
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: color 0.3s;
+    display: inline;
+}
+
+.panel-ops p:hover {
+    color: rgb(236, 172, 183);
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://www.giva.co/cdn/shop/files/Ring_-_Collection_Banner_Web-min.jpg?v=1740138579&width=1780');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(232, 241, 242);
+}
+
+/* Shop Section */
+.shop-section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(232, 241, 242);
+    padding: 40px 0;
+}
+
+/* Box Styling */
+.box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 22%;
+    padding: 20px;
+    text-align: center;
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Image Styling */
+.box-image1, .box-image2, .box-image3, .box-image4 {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.box-image1 { background-image: url('https://www.giva.co/cdn/shop/files/Frame_2613611.png?v=1740148470&width=1500'); }
+.box-image2 { background-image: url('https://www.giva.co/cdn/shop/files/Frame_2613610.png?v=1740148469&width=1500'); }
+.box-image3 { background-image: url('https://www.giva.co/cdn/shop/files/Frame_2613608.png?v=1740148470&width=1500'); }
+.box-image4 { background-image: url('https://www.giva.co/cdn/shop/files/Frame_2613609.png?v=1740148470&width=1500'); }
+
+/* "See More" Styling */
+.see-more {
+    font-size: 1rem;
+    color: rgb(22, 66, 91);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.see-more:hover {
+    text-decoration: underline;
+}
+
+.foot-panel1 {
+    background-color: rgb(228, 204, 208);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.foot-panel2 {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+ul {
+    display: block;
+}
+
+p {
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    font-size: large;
+}
+
+/* Footer Styling */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f5e1e6;
+    padding: 30px;
+    color: #333;
+}
+
+/* Footer Columns */
+.footer-column {
+    width: 30%;
+}
+
+/* Footer Headings */
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #663399;
+}
+
+/* Footer Links */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ff4081;
+}
+
+/* Footer Paragraphs */
+.footer-column p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray; /* Background color behind icons */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Social Media Icons - Black & Bigger */
+.social-icons a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 30px; 
+    color: black; 
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #333; 
+}
+/* Stores, Account, Wishlist, Cart - Hover Effect */
+.nav-item:hover {
+    transform: scale(1.1);  /* Slightly enlarges */
+    transition: transform 0.3s ease;
+}
+
+/* Empty Space Below Big Image - Add a Banner */
+.empty-space-banner {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #f8f1f3;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Enlarge Effect for "Your First Diamond" Blocks */
+.box:hover {
+    transform: scale(1.05); /* Slight enlargement */
+    transition: transform 0.3s ease;
+}
